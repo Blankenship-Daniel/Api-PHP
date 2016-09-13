@@ -7,13 +7,10 @@
    <body>
       <h1>My Api</h1>
       <?php
-      require 'api/Api.php';
-
-      try {
-         $api = new Api($_GET);
-      } catch (Exception $e) {
-         echo $e->getMessage();
-      }
+        require_once('../RecipesApi.class.php');
+        echo '<pre>';
+        echo var_dump($_SERVER);
+        echo '</pre>';
       ?>
    </body>
 </html>
