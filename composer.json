@@ -1,0 +1,15 @@
+{
+    "name": "danielblankenship/firstblockprj",
+    "type": "project",
+    "require": {
+        "components/bootstrap": "^3.3",
+        "components/jquery": "^3.1",
+        "components/polymer": "^0.3.3"
+    },
+    "authors": [
+        {
+            "name": "Daniel Blankenship",
+            "email": "blankenshipdanielj@gmail.com"
+        }
+    ]
+}
