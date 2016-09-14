@@ -86,7 +86,7 @@ abstract class Api {
 	}
 
 	private function _setArgs($request) {
-		// TODO: set $this->args here
+		$this->args = $request;
 	}
 
 	private function _setEndpoint(&$request) {
@@ -121,15 +121,24 @@ abstract class Api {
 		}
 	}
 
+	private function _stripUnderscoreRequests(&$request) {
+		foreach ($request as $key => $val) {
+			if (substr($key, 0, 1) == '_') {
+				unset($request[$key]);
+			}
+		}
+	}
+
     /**
      * Constructor: __construct
      * Allow for CORS, assemble and pre-process the data
      */
     public function __construct($request) {
-        header("Access-Control-Allow-Orgin: *");
-        header("Access-Control-Allow-Methods: *");
-        header("Content-Type: application/json");
+        // header("Access-Control-Allow-Orgin: *");
+        // header("Access-Control-Allow-Methods: *");
+        // header("Content-Type: application/json");
 
+		$this->_stripUnderscoreRequests($request);
 		$this->_setEndpoint($request);
 		$this->_setVerb($request);
 		$this->_setArgs($request);

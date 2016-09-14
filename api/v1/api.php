@@ -8,7 +8,12 @@
       <h1>My Api</h1>
       <?php
         require_once('../RecipesApi.class.php');
-        $api = new RecipesApi($_REQUEST);
+
+        try {
+            $api = new RecipesApi($_REQUEST);
+        } catch (Exception $e) {
+            echo $e->getMessage();
+        }
       ?>
    </body>
 </html>
