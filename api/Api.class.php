@@ -109,7 +109,7 @@ abstract class Api {
 	 * Sets the value of args to any extra request data that isn't the
 	 *  endpoint or the verb. This data will then be passed into the endpoint
 	 *  as a function parameter.
-	 * @param [type] $request [description]
+	 * @param Array $request the URI request data
 	 */
 	private function _setArgs($request) {
 		$this->args = $request;
