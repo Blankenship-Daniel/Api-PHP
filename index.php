@@ -12,6 +12,8 @@
          $app = new Silex\Application();
          $app['debug'] = true;
 
+         $dbopts = parse_url(getenv('DATABASE_URL'));
+
          $app->register(new Herrera\Pdo\PdoServiceProvider(),
             array(
                'pdo.dsn'      => 'pgsql:dbname=' .
