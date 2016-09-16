@@ -9,6 +9,9 @@
    <body>
       <h1>Hello World</h1>
       <?php
+         $app = new Silex\Application();
+         $app['debug'] = true;
+
          $app->register(new Herrera\Pdo\PdoServiceProvider(),
             array(
                'pdo.dsn'      => 'pgsql:dbname=' .
