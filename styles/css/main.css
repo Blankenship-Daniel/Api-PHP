@@ -11,6 +11,16 @@
  *  4. State
  *  5. Theme
  *****************************************************************************/
+/**
+ * Retrieves a color value from the $material-colors Sass map
+ * Inspired by https://github.com/nilskaspersson/Google-Material-UI-Color-Palette/
+ *
+ * @function
+ * @param {string} color-name             - quoted, lower-case, dasherized color
+ *                                          name (e.g. 'pink', 'amber')
+ * @param {string} [color-variant='500']  - quoted, lowercase color variant (e.g.
+ *                                          '200', 'a100')
+ */
 /******************************************************************************
  * Globals
  *****************************************************************************/
@@ -51,3 +61,10 @@ a {
  * Modules are the reusable, modular parts of our design. They are the
  *  callouts, the sidebar sections, the products lists and so on.
  *****************************************************************************/
+#site_nav {
+  height: 300px;
+  background: #2196f3; }
+
+.nav-search-form {
+  float: right;
+  padding: 10px; }

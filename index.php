@@ -9,7 +9,7 @@
       <link rel="stylesheet" type="text/css" href="styles/css/main.css">
    </head>
    <body>
-       <nav class="navbar navbar-light bg-faded">
+       <nav id="site_nav" class="navbar navbar-light bg-faded bg-color-blue-500">
           <a class="navbar-brand" href="#">Navbar</a>
           <ul class="nav navbar-nav">
             <li class="nav-item active">
@@ -25,12 +25,12 @@
               <a class="nav-link" href="#">About</a>
             </li>
           </ul>
-          <form class="form-inline pull-xs-right">
+          <form class="form-inline pull-xs-right nav-search-form">
             <input class="form-control" type="text" placeholder="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
          </form>
       </nav>
-      <div class="content">
+      <div class="content container">
           <h1>Hello World</h1>
 
           <div class="col-md-12">
@@ -42,4 +42,5 @@
    </body>
    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="js/app.js"></script>
 </html>
