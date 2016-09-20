@@ -2,7 +2,6 @@
     "name": "danielblankenship/firstblockprj",
     "type": "project",
     "require": {
-        "components/bootstrap": "^3.3",
         "components/jquery": "^3.1",
         "herrera-io/silex-pdo": "^1.2",
         "twitter/bootstrap": "^3.3"

@@ -4,77 +4,9 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8905335f9aafa63b3adae47613a3cfb7",
-    "content-hash": "c0e360d8c20ea37dacd93a1fae26efce",
+    "hash": "5292b32ef6b0023ad2d84677d4c18726",
+    "content-hash": "46181bcf72a46e896545671e379c8b02",
     "packages": [
-        {
-            "name": "components/bootstrap",
-            "version": "3.3.7",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/components/bootstrap.git",
-                "reference": "fe6e7683be66ba45a725816efdb51d4566733043"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/components/bootstrap/zipball/fe6e7683be66ba45a725816efdb51d4566733043",
-                "reference": "fe6e7683be66ba45a725816efdb51d4566733043",
-                "shasum": ""
-            },
-            "require": {
-                "components/jquery": "1.9.1 - 3"
-            },
-            "suggest": {
-                "components/bootstrap-default": "Provide a theme for Bootstrap as components/bootstrap only provides the CSS as file assets"
-            },
-            "type": "component",
-            "extra": {
-                "component": {
-                    "scripts": [
-                        "js/bootstrap.js"
-                    ],
-                    "files": [
-                        "js/*.js",
-                        "css/*.css",
-                        "css/*.map",
-                        "fonts/*",
-                        "less/mixins/*.less",
-                        "less/*.less"
-                    ],
-                    "shim": {
-                        "deps": [
-                            "jquery"
-                        ]
-                    }
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jacob Thornton",
-                    "email": "jacobthornton@gmail.com"
-                },
-                {
-                    "name": "Mark Otto",
-                    "email": "markdotto@gmail.com"
-                }
-            ],
-            "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
-            "homepage": "http://getbootstrap.com",
-            "keywords": [
-                "css",
-                "framework",
-                "front-end",
-                "less",
-                "mobile-first",
-                "responsive",
-                "web"
-            ],
-            "time": "2016-07-26 05:59:20"
-        },
         {
             "name": "components/jquery",
             "version": "3.1.0",
@@ -114,56 +46,6 @@
             "description": "jQuery JavaScript Library",
             "homepage": "http://jquery.com",
             "time": "2016-07-08 05:56:55"
-        },
-        {
-            "name": "components/polymer",
-            "version": "0.3.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/components/polymer.git",
-                "reference": "b808046b7e58c1f9f41ce03486cae221d712b45a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/components/polymer/zipball/b808046b7e58c1f9f41ce03486cae221d712b45a",
-                "reference": "b808046b7e58c1f9f41ce03486cae221d712b45a",
-                "shasum": ""
-            },
-            "type": "component",
-            "extra": {
-                "component": {
-                    "name": "polymer",
-                    "scripts": [
-                        "polymer.min.js"
-                    ],
-                    "files": [
-                        "src/**",
-                        "platform/**",
-                        "polymer.min.js",
-                        "polymer.min.js.map",
-                        "polymer.native.min.js",
-                        "polymer.native.min.js.map"
-                    ],
-                    "shim": {
-                        "exports": "Platform"
-                    }
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "authors": [
-                {
-                    "name": "Polymer Authors",
-                    "email": "polymer-dev@googlegroups.com"
-                }
-            ],
-            "description": "Leverage the future of the web platform today.",
-            "homepage": "http://www.polymer-project.org/",
-            "keywords": [
-                "browser",
-                "client",
-                "util"
-            ],
-            "time": "2014-06-25 23:38:12"
         },
         {
             "name": "herrera-io/pdo-log",
@@ -322,22 +204,30 @@
         },
         {
             "name": "psr/log",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b"
+                "reference": "5277094ed527a1c4477177d102fe4c53551953e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/fe0936ee26643249e916849d48e3a51d5f5e278b",
-                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/5277094ed527a1c4477177d102fe4c53551953e0",
+                "reference": "5277094ed527a1c4477177d102fe4c53551953e0",
                 "shasum": ""
             },
+            "require": {
+                "php": ">=5.3.0"
+            },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
             "autoload": {
-                "psr-0": {
-                    "Psr\\Log\\": ""
+                "psr-4": {
+                    "Psr\\Log\\": "Psr/Log/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -351,12 +241,13 @@
                 }
             ],
             "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
             "keywords": [
                 "log",
                 "psr",
                 "psr-3"
             ],
-            "time": "2012-12-21 11:40:51"
+            "time": "2016-09-19 16:02:08"
         },
         {
             "name": "silex/silex",
