@@ -1,0 +1,21 @@
+{
+  "name": "firstblockprj",
+  "homepage": "https://github.com/Blankenship-Daniel/api-php",
+  "description": "",
+  "main": "index.php",
+  "authors": [
+    "Daniel Blankenship"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jQuery": "^3.1.0",
+    "bootstrap": "^3.3.7"
+  }
+}
