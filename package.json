@@ -1,0 +1,23 @@
+{
+  "name": "api-php",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Blankenship-Daniel/api-php.git"
+  },
+  "author": "Daniel Blankenship",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Blankenship-Daniel/api-php/issues"
+  },
+  "homepage": "https://github.com/Blankenship-Daniel/api-php#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  }
+}
