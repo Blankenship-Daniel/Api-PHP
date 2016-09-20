@@ -4,8 +4,9 @@
       <meta charset="utf-8">
       <title>My App</title>
 
-      <link rel="stylesheet" type="text/css" href="vendor/twitter/bootstrap/dist/css/bootstrap.min.css">
-      <script type="text/javascript" src="vendor/twitter/bootstrap/dist/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+      <script type="text/javascript" src="bower_components/jQuery/dist/jquery.min.js"></script>
+      <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
    </head>
    <body>
       <h1>Hello World</h1>
