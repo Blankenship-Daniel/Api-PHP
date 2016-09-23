@@ -17,6 +17,7 @@
   "dependencies": {
     "bootstrap": "^3.3.7",
     "jquery": "^3.1.0",
-    "sass-material-colors": "^0.0.5"
+    "sass-material-colors": "^0.0.5",
+    "font-awesome": "^4.6.3"
   }
 }

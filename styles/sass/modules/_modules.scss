@@ -1,10 +1,21 @@
 // nav
+.navbar {
+   border-radius: 0;
+}
 #site_nav {
-    height: 300px;
-    background: material-color('blue', '500');   
+   @include box-shadow(inset 0px -1px 5px -2px rgba(0,0,0,0.75));
+   background: material-color('blue', '500');
+   margin-bottom: 0;
 }
 // forms
 .nav-search-form {
     float: right;
     padding: 10px;
+}
+// pictures
+.pic {
+   background-image: url('/images/saratoga.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
 }

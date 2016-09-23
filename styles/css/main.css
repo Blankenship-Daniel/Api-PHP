@@ -42,7 +42,19 @@
   box-sizing: border-box; }
 
 html, body {
-  min-height: 100%; }
+  min-height: 100%;
+  background: #e0e0e0; }
+
+body {
+  font-family: "Montserrat", sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", sans-serif; }
 
 a {
   color: inherit; }
@@ -55,16 +67,58 @@ a {
  *
  * These rules are prefixed with lyt- for clarity.
  *****************************************************************************/
+.boxed {
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -webkit-box-shadow: 3px 2px 14px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 2px 14px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 2px 14px -5px rgba(0, 0, 0, 0.75);
+  background: #fff;
+  padding: 2em;
+  margin: 2em 0;
+  border: 1px solid #eee; }
+
+.jumbotron {
+  -webkit-box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.75);
+  position: absolute;
+  top: 51px;
+  left: 0;
+  width: 100%;
+  border-radius: 0;
+  height: 500px; }
+
+.jumbotron-offset {
+  margin-top: 500px; }
+
+.footer {
+  min-height: 300px;
+  background: #424242; }
+
 /******************************************************************************
  * Module
  *
  * Modules are the reusable, modular parts of our design. They are the
  *  callouts, the sidebar sections, the products lists and so on.
  *****************************************************************************/
+.navbar {
+  border-radius: 0; }
+
 #site_nav {
-  height: 300px;
-  background: #2196f3; }
+  -webkit-box-shadow: inset 0px -1px 5px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 0px -1px 5px -2px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px -1px 5px -2px rgba(0, 0, 0, 0.75);
+  background: #2196f3;
+  margin-bottom: 0; }
 
 .nav-search-form {
   float: right;
   padding: 10px; }
+
+.pic {
+  background-image: url("/images/saratoga.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
