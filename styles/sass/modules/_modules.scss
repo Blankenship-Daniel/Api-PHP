@@ -1,20 +1,27 @@
 // nav
 .navbar {
-   border-radius: 0;
+    border-radius: 0;
 }
-#site_nav {
-   @include box-shadow(inset 0px -1px 5px -2px rgba(0,0,0,0.75));
-   background: material-color('blue', '500');
-   margin-bottom: 0;
+nav.navcontainer {
+    background-image: url('/images/saratoga.jpg');
 }
-// forms
-.nav-search-form {
-    float: right;
-    padding: 10px;
+nav.navbar {
+    margin-bottom: 0;
+
+    &.fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+}
+.navbackground {
+    background: material-color('blue');
+    @include box-shadow(0px 0px 5px 0px rgba(0,0,0,0.75));
 }
 // pictures
 .pic {
-   background-image: url('/images/saratoga.jpg');
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;

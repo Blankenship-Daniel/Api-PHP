@@ -12,15 +12,26 @@
       <link rel="stylesheet" type="text/css" href="styles/css/main.css">
    </head>
    <body>
-       <nav id="site_nav" class="navbar navbar-light bg-faded bg-color-blue-500">
-          <a class="navbar-brand" href="/"><i class="fa fa-ship fa-3"></i> Daniel Blankenship</a>
-          <ul class="nav navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="/">Home</a>
-            </li>
-            <li class="nav-item">
-             <a class="nav-link" href="/school.php">School</a>
-            </li>
-          </ul>
+       <nav class="navcontainer pic">
+           <nav class="navbar fixed">
+              <a class="navbar-brand" href="/"><i class="fa fa-ship fa-3"></i> Daniel Blankenship</a>
+              <ul class="nav navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                 <a class="nav-link" href="/school.php">School</a>
+                </li>
+              </ul>
+          </nav>
+          <nav class="navbar"></nav>
+          <nav class="navbar"></nav>
+          <nav class="navbar"></nav>
+          <nav class="navbar"></nav>
+          <nav class="navbar"></nav>
+          <nav class="navbar"></nav>
+          <nav class="navbar"></nav>
+          <nav class="navbar"></nav>
+          <nav class="navbar"></nav>
       </nav>
       <div class="content">
