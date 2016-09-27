@@ -5,6 +5,12 @@
    padding: 2em;
    margin: 2em 0;
    border: 1px solid #eee;
+
+   &.no-style {
+       background: none;
+       @include box-shadow(none);
+       border: none;
+   }
 }
 .footer {
    min-height: $footer-height;

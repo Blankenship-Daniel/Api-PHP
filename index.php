@@ -6,7 +6,6 @@
          <div class="col-md-4">
             <div class="boxed">
                <h3>Career</h3>
-               <!-- <img src="images/bluehost.jpg" class="img-responsive"> -->
                <p>
                    I've been working at Bluehost since July, and I'm loving it!
                    I'm currently working on front end projects using Polymer.js, Node.js, HTML/CSS, etc.
@@ -16,8 +15,6 @@
          <div class="col-md-4">
             <div class="boxed">
                <h3>Family</h3>
-               <!-- <img src="images/christmas.jpg" class="img-responsive"> -->
-               <!-- <img src="images/david.jpg" class="img-responsive"> -->
                <p>
                    This is my beautiful family.
                    The top picture is of us at a christmas party,
@@ -31,7 +28,6 @@
          <div class="col-md-4">
             <div class="boxed">
                <h3>Hobbies</h3>
-               <!-- <img src="images/gibson.jpg" class="img-responsive"> -->
                <p>
                    I absolutely love playing guitar! I've been playing for 10
                    years now, and I can't see myself stopping anytime soon. I

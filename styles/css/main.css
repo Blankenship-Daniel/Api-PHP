@@ -81,6 +81,12 @@ img {
   padding: 2em;
   margin: 2em 0;
   border: 1px solid #eee; }
+  .boxed.no-style {
+    background: none;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    border: none; }
 
 .footer {
   min-height: 300px;

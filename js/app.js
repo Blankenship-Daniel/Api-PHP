@@ -1,4 +1,9 @@
 (function() {
+
+    /**
+     * Dynamically changes the background color of the nav according to its
+     *  position y on the screen.
+     */
     function handleNavScroll() {
         var navBottomOffset = $('.navbar:last-child').offset().top;
         var fixedNav = $('.navbar.fixed');
