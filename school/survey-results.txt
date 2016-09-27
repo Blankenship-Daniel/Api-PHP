@@ -1,0 +1,87 @@
+
+September 27, 2016, 3:52 pm
+
+college_choice: Yes
+career_choice: Pottery
+0: Less than 30,000
+1: More than 30,000 less than 60,000
+2: More than 60,000 less than 100,000
+3: More than 100,000
+fulfillment_choice: Making More Money
+PHPSESSID: 2448a7de300007f0c3e103631071bcb2
+
+September 27, 2016, 3:54 pm
+
+college_choice: No
+career_choice: Pottery
+0: More than 60,000 less than 100,000
+1: More than 100,000
+fulfillment_choice: Making More Money
+PHPSESSID: 2448a7de300007f0c3e103631071bcb2
+
+September 27, 2016, 3:55 pm
+
+college_choice: Yes
+career_choice: Programming
+0: Less than 30,000
+1: More than 30,000 less than 60,000
+2: More than 60,000 less than 100,000
+fulfillment_choice: Feeling Fulfilled
+
+September 27, 2016, 3:55 pm
+
+
+September 27, 2016, 3:56 pm
+
+
+September 27, 2016, 3:57 pm
+
+college_choice: No
+career_choice: asdf
+0: More than 30,000 less than 60,000
+fulfillment_choice: Feeling Fulfilled
+
+September 27, 2016, 3:57 pm
+
+
+September 27, 2016, 3:58 pm
+
+college_choice: No
+career_choice: asdf
+0: More than 30,000 less than 60,000
+fulfillment_choice: Feeling Fulfilled
+
+September 27, 2016, 3:59 pm
+
+college_choice: Yes
+career_choice: asdfasdf
+0: Less than 30,000
+1: More than 30,000 less than 60,000
+fulfillment_choice: Feeling Fulfilled
+
+September 27, 2016, 3:59 pm
+
+college_choice: Yes
+career_choice: asdfasdf
+0: Less than 30,000
+1: More than 30,000 less than 60,000
+fulfillment_choice: Feeling Fulfilled
+
+September 27, 2016, 4:01 pm
+
+
+September 27, 2016, 4:02 pm
+
+
+September 27, 2016, 4:03 pm
+
+
+September 27, 2016, 4:03 pm
+
+college_choice: Yes
+career_choice: Holistic Healing
+0: Less than 30,000
+1: More than 30,000 less than 60,000
+2: More than 60,000 less than 100,000
+fulfillment_choice: Feeling Fulfilled
+
