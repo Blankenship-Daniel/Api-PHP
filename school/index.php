@@ -6,6 +6,7 @@
        <ul>
            <li><a href="/school/03-6-survey.php">03.6 - Assessment: PHP Survey</a></li>
            <li><a href="/school/03-6-survey-results.php">03.6 - Assessment: PHP Survey Results</a></li>
+           <li><a href="/school/04-6-database-set-up.php">04.6 - Assignment: Database Set Up</a></li>
        </ul>
     </div>
 </div>
