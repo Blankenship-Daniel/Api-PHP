@@ -7,9 +7,13 @@
     <div class="boxed">
         <?php
             $db = new DBPantry($conn);
-            echo "<pre>";
-            var_dump($db->getAllFoodTypes());
-            echo "</pre>";
+            $food_types = $db->getAllFoodTypes();
+
+            foreach ($food_types as $food_type) {
+                echo "<pre>";
+                var_dump($food_type);
+                echo "</pre>";
+            }
         ?>
     </div>
 </div>
