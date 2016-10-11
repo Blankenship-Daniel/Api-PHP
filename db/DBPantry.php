@@ -16,7 +16,8 @@ class DBPantry {
         $result = $this->conn->query($sql);
 
         if ($result->num_rows > 0) {
-            return json_encode($result);
+            var_dump($result->fetch_assoc());
+            return $result->fetch_assoc();
         }
 
         return false;
