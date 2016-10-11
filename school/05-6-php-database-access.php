@@ -10,9 +10,8 @@
             $food_types = $db->getAllFoodTypes();
 
             foreach ($food_types as $food_type) {
-                echo "<pre>";
-                var_dump($food_type);
-                echo "</pre>";
+                echo $food_type["id"];
+                echo $food_type["name"];
             }
         ?>
     </div>
