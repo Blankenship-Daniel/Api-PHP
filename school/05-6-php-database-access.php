@@ -8,7 +8,7 @@
         <?php
             $db = new DBPantry($conn);
             echo "<pre>";
-            echo $db->getAllFoodTypes();
+            var_dump($db->getAllFoodTypes());
             echo "</pre>";
         ?>
     </div>
