@@ -8,11 +8,13 @@
         <label for="food_types">Food types: </label>
         <select onchange="getFood(this.value)" name="food_types" id="food_types">
         <?php
-            echo '1';
             $db = new DBPantry($conn);
-            echo '2';
             $food_types = $db->getAllFoodTypes();
-            echo '3';
+
+            echo '<pre>';
+            var_dump($food_types);
+            echo '</pre>';
+
             foreach ($food_types as $food_type) {
                 echo "<option value='" . $food_type['id'] . "'>" .
                     strtolower(str_replace("_", " ", $food_type['name'])) .
