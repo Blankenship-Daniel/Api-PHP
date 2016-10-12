@@ -5,8 +5,8 @@ function populateFoods(json) {
 
     for (var i = 0; i < json.length; i++) {
         str += '<tr>';
-        for (var prop in json) {
-            str += '<td>' + json[prop] + '</td>';
+        for (var prop in json[i]) {
+            str += '<td>' + json[i][prop] + '</td>';
         }
         str += '</tr>';
     }

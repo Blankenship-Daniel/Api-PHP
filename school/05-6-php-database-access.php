@@ -20,7 +20,7 @@
             mysqli_close($conn);
         ?>
         </select>
-        <table>
+        <table border="1">
             <thead>
                 <tr>
                     <th>
