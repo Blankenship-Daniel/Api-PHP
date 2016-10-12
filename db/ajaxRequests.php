@@ -8,8 +8,6 @@ if (isset($_POST['request']) && $_POST['request'] == 'getFoodById') {
     $data = $db->getFoodById($_POST['id']);
 }
 
-print_r($data);
-
 mysqli_close($conn);
-return $data;
+return json_encode($data);
 ?>
