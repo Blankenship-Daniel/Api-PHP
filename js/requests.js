@@ -1,4 +1,5 @@
 function getFood(id) {
+    console.log(id);
     $.ajax({
         type: 'POST',
         url: '/db/ajaxRequests.php',
