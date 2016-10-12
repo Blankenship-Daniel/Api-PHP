@@ -17,12 +17,9 @@
                     "</option>";
             }
 
-            $result = $db->getFoodById(2);
-
             mysqli_close($conn);
         ?>
         </select>
-        <?php echo '<pre>' . var_dump($result) . '</pre>'; ?>
     </div>
 </div>
 
