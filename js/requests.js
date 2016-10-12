@@ -7,7 +7,7 @@ function getFood(id) {
             request: 'getFoodById',
             id: id
         },
-        dataType: 'text',
+        dataType: 'json',
         success: function(data) {
             console.log(data);
         },
