@@ -20,6 +20,21 @@
             mysqli_close($conn);
         ?>
         </select>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        Food Name
+                    </th>
+                    <th>
+                        Expiration Date
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="foods">
+
+            </tbody>
+        </table>
     </div>
 </div>
 

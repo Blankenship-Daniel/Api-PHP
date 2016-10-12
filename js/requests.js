@@ -1,3 +1,11 @@
+function populateFoods(json) {
+    for (var i = 0; i < json.length; i++) {
+        for (var prop in json) {
+            console.log(prop + ' ' + json[prop]);
+        }
+    }
+}
+
 function getFood(id) {
     console.log(id);
     $.ajax({
