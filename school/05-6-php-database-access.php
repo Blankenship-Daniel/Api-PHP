@@ -11,10 +11,6 @@
             $db = new DBPantry($conn);
             $food_types = $db->getAllFoodTypes();
 
-            echo '<pre>';
-            var_dump($food_types);
-            echo '</pre>';
-
             foreach ($food_types as $food_type) {
                 echo "<option value='" . $food_type['id'] . "'>" .
                     strtolower(str_replace("_", " ", $food_type['name'])) .
