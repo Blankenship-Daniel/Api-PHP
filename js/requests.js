@@ -9,7 +9,7 @@ function getFood(id) {
         },
         dataType: 'text',
         success: function(data) {
-            console.log(JSON.stringify(data));
+            console.log(data);
         },
         error: function(xhr, opt, err) {
             console.log(xhr);

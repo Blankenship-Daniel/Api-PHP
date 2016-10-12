@@ -17,9 +17,12 @@
                     "</option>";
             }
 
+            $result = $db->getFoodById(2);
+
             mysqli_close($conn);
         ?>
         </select>
+        <?php echo '<pre>' . json_encode($result) . '</pre>'; ?>
     </div>
 </div>
 
