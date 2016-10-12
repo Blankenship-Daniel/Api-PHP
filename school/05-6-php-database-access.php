@@ -22,7 +22,7 @@
             mysqli_close($conn);
         ?>
         </select>
-        <?php echo '<pre>' . json_decode($result) . '</pre>'; ?>
+        <?php echo '<pre>' . json_encode($result, JSON_FORCE_OBJECT) . '</pre>'; ?>
     </div>
 </div>
 
