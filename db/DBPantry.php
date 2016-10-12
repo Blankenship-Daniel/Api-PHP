@@ -30,7 +30,7 @@ class DBPantry {
      */
     function getFoodById($id) {
         $stmt = $this->conn->prepare("SELECT name, expiration_date FROM pantry WHERE food_type = ?");
-        $result = $stmt->bind_param("s", $id);
+        $result = $stmt->bind_param("i", $id);
 
         if ($result->num_rows > 0) {
             return json_encode($result->fetch_all(MYSQLI_ASSOC));
