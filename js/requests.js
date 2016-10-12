@@ -1,9 +1,17 @@
 function populateFoods(json) {
+    var str = '';
+    var foods = $('#foods');
+    foods.html('');
+
     for (var i = 0; i < json.length; i++) {
+        str += '<tr>';
         for (var prop in json) {
-            console.log(prop + ' ' + json[prop]);
+            str += '<td>' + json[prop] + '</td>';
         }
+        str += '</tr>';
     }
+
+    foods.append(str);
 }
 
 function getFood(id) {
@@ -17,7 +25,7 @@ function getFood(id) {
         },
         dataType: 'json',
         success: function(data) {
-            console.log(data);
+            populateFoods(data);
         },
         error: function(xhr, opt, err) {
             console.log(xhr);
