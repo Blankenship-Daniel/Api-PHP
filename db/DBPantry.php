@@ -28,15 +28,15 @@ class DBPantry {
      * @return json | false returns a json encoded object, or false if the
      *                      query doesn't return a result.
      */
-    // function getFoodById($id) {
-    //     $stmt = $this->conn->prepare("SELECT name, expiration_date FROM pantry WHERE food_type = ?");
-    //     $result = $stmt->bind_param("i", $id);
-    //
-    //     if ($result->num_rows > 0) {
-    //         return json_encode($result->fetch_all(MYSQLI_ASSOC));
-    //     }
-    //
-    //     return false;
-    // }
+    function getFoodById($id) {
+        $stmt = $this->conn->prepare("SELECT name, expiration_date FROM pantry WHERE food_type = ?");
+        $result = $stmt->bind_param("i", $id);
+
+        if ($result->num_rows > 0) {
+            return json_encode($result->fetch_all(MYSQLI_ASSOC));
+        }
+
+        return false;
+    }
 }
 ?>
