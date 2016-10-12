@@ -11,6 +11,8 @@ function getFood(id) {
             console.log(JSON.stringify(data));
         },
         error: function(xhr, opt, err) {
+            console.log(xhr);
+            console.log(opt);
             console.log(err);
         }
     })
