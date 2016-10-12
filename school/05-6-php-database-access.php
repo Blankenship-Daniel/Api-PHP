@@ -16,6 +16,8 @@
                     strtolower(str_replace("_", " ", $food_type['name'])) .
                     "</option>";
             }
+
+            mysqli_close($conn);
         ?>
         </select>
     </div>
