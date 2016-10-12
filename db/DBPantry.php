@@ -34,11 +34,11 @@ class DBPantry {
         $stmt->execute();
         $stmt->bind_result($result);
 
-        if ($result->num_rows > 0) {
-            return $result->fetch_all(MYSQLI_ASSOC);
-        }
+        // if ($result->num_rows > 0) {
+        //     return $result->fetch_all(MYSQLI_ASSOC);
+        // }
 
-        return false;
+        return $result;
     }
 }
 ?>
