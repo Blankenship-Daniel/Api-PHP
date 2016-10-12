@@ -9,5 +9,5 @@ if (isset($_POST['request']) && $_POST['request'] == 'getFoodById') {
 }
 
 mysqli_close($conn);
-return $data;
+return json_encode($data);
 ?>
