@@ -11,7 +11,9 @@
             $food_types = $db->getAllFoodTypes();
 
             foreach ($food_types as $food_type) {
-                echo "<option value='" . $food_type['id'] . "'>" . $food_type['name'] . "</option>";
+                echo "<option value='" . $food_type['id'] . "'>" .
+                    strtolower(str_replace("_", " ", $food_type['name'])) . 
+                    "</option>";
             }
         ?>
         </select>
