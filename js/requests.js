@@ -15,7 +15,6 @@ function populateFoods(json) {
 }
 
 function getFood(id) {
-    console.log(id);
     $.ajax({
         type: 'POST',
         url: '/db/ajaxRequests.php',
@@ -32,5 +31,9 @@ function getFood(id) {
             console.log(opt);
             console.log(err);
         }
-    })
+    });
 }
+
+$(function() {
+    getFood(2);
+});
