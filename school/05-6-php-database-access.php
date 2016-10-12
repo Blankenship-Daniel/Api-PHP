@@ -3,7 +3,7 @@
 <?php require_once('../db/DBPantry.php') ?>
 
 <div class="container">
-    <h1>Database Setup</h1>
+    <h1>PHP Database Access</h1>
     <div class="row">
         <div class="col-md-12">
             <div class="col-md-6">
