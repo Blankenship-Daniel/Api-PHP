@@ -6,7 +6,7 @@
     <h1>Database Setup</h1>
     <div class="boxed">
         <label for="food_types">Food types: </label>
-        <select name="food_types" id="food_types">
+        <select onchange="getFood(this.value)" name="food_types" id="food_types">
         <?php
             $db = new DBPantry($conn);
             $food_types = $db->getAllFoodTypes();
