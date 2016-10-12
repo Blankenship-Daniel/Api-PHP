@@ -32,13 +32,12 @@ class DBPantry {
         $stmt = $this->conn->prepare("SELECT name, expiration_date FROM pantry WHERE food_type=?");
         $stmt->bind_param("i", $id);
         $stmt->execute();
-        return $stmt->fetch_all(MYSQLI_ASSOC);
+        $stmt->bind_result($result);
+        return $result;
 
         // if ($result->num_rows > 0) {
         //     return $result->fetch_all(MYSQLI_ASSOC);
         // }
-
-        return $result;
     }
 }
 ?>
