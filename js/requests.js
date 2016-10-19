@@ -1,3 +1,30 @@
+function addFoods() {
+    var foodName = $('#add_food_name').val();
+    var foodType = $('#add_food_type').val();
+    var expDate = $('#add_exp_date').val();
+
+    $.ajax({
+        type: 'POST',
+        url: '/db/ajaxRequests.php',
+        data: {
+            request: 'addFoodItem',
+            foodName: foodName,
+            foodType: foodType,
+            expDate: expDate
+        },
+        dataType: 'json',
+        success: function(data) {
+            // populateFoods(data);
+            console.log(data);
+        },
+        error: function(xhr, opt, err) {
+            console.log(xhr);
+            console.log(opt);
+            console.log(err);
+        }
+    });
+}
+
 function deleteFoodItem(id) {
     $.ajax({
         type: 'POST',

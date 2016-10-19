@@ -6,14 +6,36 @@ class DBPantry {
         $this->conn = $conn;
     }
 
+    function addFoodItem($foodName, $foodType, $expDate) {
+        $stmt = $this->conn->prepare("DELETE FROM pantry WHERE id=?");
+        $stmt->bind_param("s", $foodName);
+        $stmt->bind_param("s", $foodType);
+        $stmt->bind_param("s", $expDate);
+        $stmt->execute();
+
+        $inserted_data = $this->getAllFood();
+
+        return $inserted_data;
+    }
+
     function deleteFoodItem($id) {
         $deleted_data = $this->getFoodById($id);
         $stmt = $this->conn->prepare("DELETE FROM pantry WHERE id=?");
         $stmt->bind_param("s", $id);
         $stmt->execute();
-        $result = $stmt->get_result();
 
         return $deleted_data;
+    }
+
+    function getAllFoods() {
+        $sql = "SELECT name, expiration_date, id FROM pantry";
+        $result = $this->conn->query($sql);
+
+        if ($result->num_rows > 0) {
+            return $result->fetch_all(MYSQLI_ASSOC);
+        }
+
+        return false;
     }
 
     /**
