@@ -36,6 +36,9 @@
                                 <th>
                                     Expiration Date
                                 </th>
+                                <th>
+                                    
+                                </th>
                             </tr>
                         </thead>
                         <tbody id="foods"></tbody>
