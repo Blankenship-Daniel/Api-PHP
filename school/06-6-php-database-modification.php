@@ -9,7 +9,7 @@
             <div class="col-md-6">
                 <div class="boxed">
                     <label for="food_types">Food types: </label>
-                    <select onchange="getFood(this.value)" name="food_types" id="food_types">
+                    <select onchange="getFoodByFoodType(this.value)" name="food_types" id="food_types">
                     <?php
                         $db = new DBPantry($conn);
                         $food_types = $db->getAllFoodTypes();
@@ -37,7 +37,7 @@
                                     Expiration Date
                                 </th>
                                 <th>
-                                    
+
                                 </th>
                             </tr>
                         </thead>

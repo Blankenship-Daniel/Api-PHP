@@ -8,7 +8,7 @@ function deleteFoodItem(id) {
         },
         dataType: 'json',
         success: function(data) {
-            console.log(data);
+            populateFoods(data);
         },
         error: function(xhr, opt, err) {
             console.log(xhr);
@@ -22,8 +22,6 @@ function populateFoods(json) {
     var str = '';
     var foods = $('#foods');
     foods.html('');
-
-    console.log(json);
 
     for (var i = 0; i < json.length; i++) {
         str += '<tr>';
@@ -41,12 +39,12 @@ function populateFoods(json) {
     foods.append(str);
 }
 
-function getFood(id) {
+function getFoodByFoodType(id) {
     $.ajax({
         type: 'POST',
         url: '/db/ajaxRequests.php',
         data: {
-            request: 'getFoodById',
+            request: 'getFoodByFoodType',
             id: id
         },
         dataType: 'json',
