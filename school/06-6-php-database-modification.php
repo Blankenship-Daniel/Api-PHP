@@ -23,6 +23,8 @@
                     }
                 ?>
                 </select>
+                <label for="expDate">Expiration Date: </label>
+                <input type="text" name="expDate" value="">
             </div>
         </div>
     </div>
