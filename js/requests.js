@@ -3,12 +3,14 @@ function populateFoods(json) {
     var foods = $('#foods');
     foods.html('');
 
+    console.log(json);
+
     for (var i = 0; i < json.length; i++) {
         str += '<tr>';
         for (var prop in json[i]) {
             str += '<td>' + json[i][prop] + '</td>';
         }
-        str += '<td><i class="fa fa-minus-circle"></i></td>';
+        str += '<td><i data-id="" class="fa fa-minus-circle"></i></td>';
         str += '</tr>';
     }
 
