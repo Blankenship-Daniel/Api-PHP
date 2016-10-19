@@ -125,7 +125,8 @@ nav.navbar {
   background-position: center; }
 
 .fa.fa-minus-circle {
-  color: #f44336; }
+  color: #f44336;
+  cursor: pointer; }
 
 @media (max-width: 800px) {
   .navbar-nav {
