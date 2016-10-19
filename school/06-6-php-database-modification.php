@@ -6,44 +6,44 @@
     <h1>PHP Database Modification</h1>
     <div class="row">
         <div class="col-md-12">
-            <div class="col-md-6">
-                <div class="boxed">
-                    <label for="food_types">Food types: </label>
-                    <select onchange="getFoodByFoodType(this.value)" name="food_types" id="food_types">
-                    <?php
-                        $db = new DBPantry($conn);
-                        $food_types = $db->getAllFoodTypes();
+            <div class="boxed">
+                <label for="food_types">Food types: </label>
+                <select onchange="getFoodByFoodType(this.value)" name="food_types" id="food_types">
+                <?php
+                    $db = new DBPantry($conn);
+                    $food_types = $db->getAllFoodTypes();
 
-                        foreach ($food_types as $food_type) {
-                            echo "<option value='" . $food_type['id'] . "'>" .
-                                strtolower(str_replace("_", " ", $food_type['name'])) .
-                                "</option>";
-                        }
+                    foreach ($food_types as $food_type) {
+                        echo "<option value='" . $food_type['id'] . "'>" .
+                            strtolower(str_replace("_", " ", $food_type['name'])) .
+                            "</option>";
+                    }
 
-                        mysqli_close($conn);
-                    ?>
-                    </select>
-                </div>
+                    mysqli_close($conn);
+                ?>
+                </select>
             </div>
-            <div class="col-md-6">
-                <div class="boxed">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>
-                                    Food Name
-                                </th>
-                                <th>
-                                    Expiration Date
-                                </th>
-                                <th>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="boxed">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>
+                                Food Name
+                            </th>
+                            <th>
+                                Expiration Date
+                            </th>
+                            <th>
 
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody id="foods"></tbody>
-                    </table>
-                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="foods"></tbody>
+                </table>
             </div>
         </div>
     </div>
