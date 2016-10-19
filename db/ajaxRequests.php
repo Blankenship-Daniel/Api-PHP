@@ -7,7 +7,7 @@ $db = new DBPantry($conn);
 if (isset($_POST['request']) && $_POST['request'] == 'getFoodById') {
     $data = $db->getFoodById($_POST['id']);
 } else if (isset($_POST['request']) && $_POST['request'] == 'deleteFoodItem') {
-    $data = $db->deleteFoodById($_POST['id']);
+    $data = $db->deleteFoodItem($_POST['id']);
 }
 
 mysqli_close($conn);
