@@ -60,5 +60,5 @@ function getFoodByFoodType(id) {
 }
 
 $(function() {
-    getFood(2);
+    getFoodByFoodType(2);
 });
