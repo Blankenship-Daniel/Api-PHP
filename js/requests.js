@@ -8,7 +8,7 @@ function populateFoods(json) {
         for (var prop in json[i]) {
             str += '<td>' + json[i][prop] + '</td>';
         }
-        str += '<td><i class="fa fa-remove-icon"></i></td>';
+        str += '<td><i class="fa fa-minus-circle"></i></td>';
         str += '</tr>';
     }
 
