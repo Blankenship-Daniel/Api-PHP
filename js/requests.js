@@ -8,9 +8,13 @@ function populateFoods(json) {
     for (var i = 0; i < json.length; i++) {
         str += '<tr>';
         for (var prop in json[i]) {
-            str += '<td>' + json[i][prop] + '</td>';
+            if (prop === 'id') {
+                str += '<td><i onclick="deleteFoodItem(' +
+                    json[i][prop] + ')" class="fa fa-minus-circle"></i></td>';
+            } else {
+                str += '<td>' + json[i][prop] + '</td>';
+            }
         }
-        str += '<td><i data-id="" class="fa fa-minus-circle"></i></td>';
         str += '</tr>';
     }
 
