@@ -9,7 +9,7 @@
             <div class="boxed">
                 <h3>Add food</h3>
                 <label for="foodName">Food name: </label>
-                <input type="text" name="foodName" value="">
+                <input type="text" name="foodName" value="" placeholder="Cheese">
                 <label for="foodType">Food type: </label>
                 <select name="foodType">
                 <?php
@@ -24,7 +24,7 @@
                 ?>
                 </select>
                 <label for="expDate">Expiration Date: </label>
-                <input type="text" name="expDate" value="">
+                <input type="text" name="expDate" value="" placeholder="YYYY-MM-DD">
             </div>
         </div>
     </div>
