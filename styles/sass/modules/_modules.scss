@@ -26,3 +26,7 @@ nav.navbar {
    background-repeat: no-repeat;
    background-position: center;
 }
+// remove icon
+.fa.fa-minus-circle {
+    background: material-color('red');
+}

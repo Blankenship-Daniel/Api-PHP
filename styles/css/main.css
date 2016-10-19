@@ -124,6 +124,9 @@ nav.navbar {
   background-repeat: no-repeat;
   background-position: center; }
 
+.fa.fa-minus-circle {
+  background: #f44336; }
+
 @media (max-width: 800px) {
   .navbar-nav {
     display: none; } }
