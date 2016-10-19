@@ -7,6 +7,7 @@
     <div class="row">
         <div class="col-md-12">
             <div class="boxed">
+                <h3>Select food type</h3>
                 <label for="food_types">Food types: </label>
                 <select onchange="getFoodByFoodType(this.value)" name="food_types" id="food_types">
                 <?php
@@ -28,6 +29,7 @@
     <div class="row">
         <div class="col-md-12">
             <div class="boxed">
+                <h3>Foods</h3>
                 <table class="table">
                     <thead>
                         <tr>
