@@ -29,7 +29,7 @@ class DBPantry {
      *                      query doesn't return a result.
      */
     function getFoodById($id) {
-        $stmt = $this->conn->prepare("SELECT * FROM pantry WHERE food_type=?");
+        $stmt = $this->conn->prepare("SELECT id, name, expiration_date FROM pantry WHERE food_type=?");
         $stmt->bind_param("s", $id);
         $stmt->execute();
         $result = $stmt->get_result();
