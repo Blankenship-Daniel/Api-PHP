@@ -1,3 +1,23 @@
+function deleteFoodItem(id) {
+    $.ajax({
+        type: 'POST',
+        url: '/db/ajaxRequests.php',
+        data: {
+            request: 'deleteFoodItem',
+            id: id
+        },
+        dataType: 'json',
+        success: function(data) {
+            console.log(data);
+        },
+        error: function(xhr, opt, err) {
+            console.log(xhr);
+            console.log(opt);
+            console.log(err);
+        }
+    });
+}
+
 function populateFoods(json) {
     var str = '';
     var foods = $('#foods');

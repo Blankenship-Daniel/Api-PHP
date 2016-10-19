@@ -6,6 +6,19 @@ class DBPantry {
         $this->conn = $conn;
     }
 
+    function deleteFoodItem($id) {
+        $stmt = $this->conn->prepare("DELETE FROM pantry WHERE id=?");
+        $stmt->bind_param("s", $id);
+        $stmt->execute();
+        $result = $stmt->get_result();
+
+        if ($result->num_rows > 0) {
+            return $result->fetch_all(MYSQLI_ASSOC);
+        }
+
+        return false;
+    }
+
     /**
      * Gets every row from the food_type table.
      * @return json | false returns a json encoded object, or false if the
