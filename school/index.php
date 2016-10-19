@@ -8,7 +8,7 @@
            <li><a href="/school/03-6-survey-results.php">03.6 - Assessment: PHP Survey Results</a></li>
            <li><a href="/school/04-6-database-set-up.php">04.6 - Assignment: Database Set Up</a></li>
            <li><a href="/school/05-6-php-database-access.php">05.6 - Assignment: PHP Database Access</a></li>
-           <li><a href="/school/06-6-php-database-modification.php">05.6 - Assignment: PHP Database Modification</a></li>
+           <li><a href="/school/06-6-php-database-modification.php">06.6 - Assignment: PHP Database Modification</a></li>
        </ul>
     </div>
 </div>
