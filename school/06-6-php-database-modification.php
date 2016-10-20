@@ -44,7 +44,10 @@
                                 Expiration Date
                             </th>
                             <th>
-
+                                Food Type
+                            </th>
+                            <th>
+                                
                             </th>
                         </tr>
                     </thead>
