@@ -28,7 +28,7 @@ class DBPantry {
     }
 
     function getAllFoods() {
-        $sql = "select pantry.name as name, pantry.expiration_date as expiration_date, food_type.name as food_type, pantry.id as id from pantry left join food_type on pantry.food_type = food_type.id";
+        $sql = "select pantry.name as name, pantry.expiration_date as expiration_date, food_type.name as food_type, pantry.id as id from pantry left join food_type on pantry.food_type = food_type.id order_by food_type";
         $result = $this->conn->query($sql);
 
         if ($result->num_rows > 0) {
