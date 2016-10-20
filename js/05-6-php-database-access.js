@@ -24,7 +24,9 @@ function getFood(id) {
         },
         dataType: 'json',
         success: function(data) {
-            populateFoods(data);
+            if (data !== null) {
+                populateFoods(data);
+            }
         },
         error: function(xhr, opt, err) {
             console.log(xhr);
