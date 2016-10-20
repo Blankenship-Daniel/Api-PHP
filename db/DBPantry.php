@@ -7,7 +7,7 @@ class DBPantry {
     }
 
     function addFoodItem($foodName, $foodType, $expDate) {
-        $stmt = $this->conn->prepare("INSERT INTO pantry VALUES (?, ?, ?)");
+        $stmt = $this->conn->prepare("INSERT INTO pantry (name, food_type, expiration_date) VALUES (?, ?, ?)");
         $stmt->bind_param("s", $foodName);
         $stmt->bind_param("s", $foodType);
         $stmt->bind_param("s", $expDate);
