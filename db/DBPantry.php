@@ -11,14 +11,10 @@ class DBPantry {
         $stmt->bind_param("sss", $foodName, $foodType, $expDate);
 
         if ($stmt->execute()) {
-            echo 'Successfully added food item';
-        } else {
-            die('Error : ('. $mysqli->errno .') '. $mysqli->error);
+            return true;
         }
 
-        $stmt->close();
-
-        return true;
+        return false;
     }
 
     function deleteFoodItem($id) {
