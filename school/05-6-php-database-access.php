@@ -46,5 +46,5 @@
     </div>
 </div>
 
-<script src="/js/05-6-database-access.js"></script>
 <?php require_once('../layouts/footer.php') ?>
+<script src="/js/05-6-php-database-access.js"></script>

@@ -55,5 +55,5 @@
     </div>
 </div>
 
-<script src="/js/06-6-php-database-modification.js"></script>
 <?php require_once('../layouts/footer.php') ?>
+<script src="/js/06-6-php-database-modification.js"></script>
