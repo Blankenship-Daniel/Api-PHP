@@ -7,15 +7,13 @@ class DBPantry {
     }
 
     function addFoodItem($foodName, $foodType, $expDate) {
-        $stmt = $this->conn->prepare("DELETE FROM pantry WHERE id=?");
+        $stmt = $this->conn->prepare("INSERT INTO pantry VALUES (?, ?, ?)");
         $stmt->bind_param("s", $foodName);
         $stmt->bind_param("s", $foodType);
         $stmt->bind_param("s", $expDate);
         $stmt->execute();
 
-        $inserted_data = $this->getAllFood();
-
-        return $inserted_data;
+        return true;
     }
 
     function deleteFoodItem($id) {
@@ -28,7 +26,7 @@ class DBPantry {
     }
 
     function getAllFoods() {
-        $sql = "select pantry.name as name, pantry.expiration_date as expiration_date, food_type.name as food_type, pantry.id as id from pantry left join food_type on pantry.food_type = food_type.id order by food_type";
+        $sql = "SELECT pantry.name AS name, pantry.expiration_date AS expiration_date, food_type.name AS food_type, pantry.id AS id FROM pantry LEFT JOIN food_type ON pantry.food_type = food_type.id ORDER BY food_type";
         $result = $this->conn->query($sql);
 
         if ($result->num_rows > 0) {

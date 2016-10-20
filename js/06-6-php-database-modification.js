@@ -14,8 +14,7 @@ function addFood() {
         },
         dataType: 'json',
         success: function(data) {
-            // populateFoods(data);
-            console.log(data);
+            getAllFoods();
         },
         error: function(xhr, opt, err) {
             console.log(xhr);
