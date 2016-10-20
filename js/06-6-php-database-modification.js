@@ -1,4 +1,4 @@
-function addFoods() {
+function addFood() {
     var foodName = $('#add_food_name').val();
     var foodType = $('#add_food_type').val();
     var expDate = $('#add_exp_date').val();
@@ -66,13 +66,12 @@ function populateFoods(json) {
     foods.append(str);
 }
 
-function getFoodByFoodType(id) {
+function getAllFoods() {
     $.ajax({
         type: 'POST',
         url: '/db/ajaxRequests.php',
         data: {
-            request: 'getFoodByFoodType',
-            id: id
+            request: 'getAllFoods'
         },
         dataType: 'json',
         success: function(data) {
@@ -87,5 +86,5 @@ function getFoodByFoodType(id) {
 }
 
 $(function() {
-    getFoodByFoodType(2);
+    getAllFoods();
 });
