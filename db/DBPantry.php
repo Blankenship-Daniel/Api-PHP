@@ -8,10 +8,15 @@ class DBPantry {
 
     function addFoodItem($foodName, $foodType, $expDate) {
         $stmt = $this->conn->prepare("INSERT INTO pantry (name, food_type, expiration_date) VALUES (?, ?, ?)");
-        $stmt->bind_param("s", $foodName);
-        $stmt->bind_param("s", $foodType);
-        $stmt->bind_param("s", $expDate);
-        $stmt->execute();
+        $stmt->bind_param("sss", $foodName, $foodType, $expDate);
+
+        if ($stmt->execute()) {
+            echo 'Successfully added food item';
+        } else {
+            die('Error : ('. $mysqli->errno .') '. $mysqli->error);
+        }
+
+        $stmt->close();
 
         return true;
     }
