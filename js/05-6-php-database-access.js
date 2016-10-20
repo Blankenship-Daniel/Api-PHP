@@ -19,7 +19,7 @@ function getFood(id) {
         type: 'POST',
         url: '/db/ajaxRequests.php',
         data: {
-            request: 'getFoodById',
+            request: 'getFoodByFoodType',
             id: id
         },
         dataType: 'json',
