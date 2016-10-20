@@ -35,7 +35,7 @@ function deleteFoodItem(id) {
         },
         dataType: 'json',
         success: function(data) {
-            populateFoods(data);
+            getAllFoods();
         },
         error: function(xhr, opt, err) {
             console.log(xhr);
