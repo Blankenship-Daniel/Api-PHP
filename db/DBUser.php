@@ -25,6 +25,13 @@ class DBUser {
         return false;
     }
 
+    /**
+     * Verify a user exists with a given email password.
+     * @param  string $email    the user's email address.
+     * @param  string $password the user's password.
+     * @return boolean          true, if a user exists with the given email
+     *                                and password, false otherwise.
+     */
     function authUser($email, $password) {
         $stmt = $this->conn->prepare("SELECT password FROM user WHERE email = ?");
         $stmt->bind_param("s", $email);
