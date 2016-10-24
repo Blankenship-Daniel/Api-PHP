@@ -10,16 +10,16 @@
             </div>
         </div>
         <div class="col-md-12">
-            <form class="" action="login-handle.php" method="post">
+            <form id="loginForm" action="login-handle.php" method="post">
                 <input type="hidden" name="redirect" value="<?php echo $_GET['redirect'] ?>">
                 <div class="boxed">
                     <div class="form-group">
                         <label for="email">Email: </label>
-                        <input type="text" name="email" placeholder="john@doe.com" class="form-control">
+                        <input type="text" name="email" placeholder="john@doe.com" class="form-control" required>
                     </div>
                     <div class="form-group">
                         <label for="password">Password: </label>
-                        <input type="password" name="password" class="form-control">
+                        <input type="password" name="password" class="form-control" required>
                     </div>
                     <button type="submit" class="btn btn-default">Submit</button>
                 </div>
@@ -29,3 +29,6 @@
 </div>
 
 <?php require_once('../layouts/footer.php') ?>
+<script>
+$('#loginForm').validate();
+</script>
