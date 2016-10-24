@@ -7,9 +7,8 @@ $db = new DBUser($conn);
 $response = $db->authUser($_POST['email'], $_POST['password']);
 
 if ($response) {
-    echo 'user authed';
+    header('Location: ' . $_POST['redirect']);
 } else {
-    echo 'user not authed';
+    header('Location: login.php');
 }
-die;
 ?>
