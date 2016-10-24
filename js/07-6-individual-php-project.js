@@ -1,9 +1,6 @@
 function addFood(e) {
     var form = $('#addFoodForm');
     form.validate();
-    form.on('submit', function(e) {
-        e.preventDefault();
-    });
 
     if (!form.valid()) {
         return false;
@@ -96,4 +93,8 @@ function getAllFoods() {
 
 $(function() {
     getAllFoods();
+
+    $('#addFoodForm').on('submit', function(e) {
+        e.preventDefault();
+    });
 });
