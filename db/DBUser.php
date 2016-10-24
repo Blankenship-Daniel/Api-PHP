@@ -30,10 +30,16 @@ class DBUser {
         $stmt->bind_param("s", $email);
         $stmt->execute();
         $result = $stmt->get_result();
-        echo '<pre>';
-        var_dump($result);
-        echo '</pre>';
-        die;
+
+        if ($result->num_rows > 0) {
+            $data = $result->fetch_all(MYSQLI_ASSOC);
+            echo '<pre>';
+            var_dump($data);
+            echo '</pre>';
+            die;
+        }
+
+        return false;
     }
 }
 ?>
