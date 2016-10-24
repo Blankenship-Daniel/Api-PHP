@@ -6,12 +6,20 @@
     <h1>User Login</h1>
     <div class="row">
         <div class="col-md-12">
-            <div class="boxed form-group">
-                <label for="email">Email: </label>
-                <input type="text" name="email" placeholder="john@doe.com" class="form-control">
-                <label for="password">Password: </label>
-                <input type="password" name="password" class="form-control">
-            </div>
+            <form class="" action="login-submit" method="post">
+                <input type="hidden" name="redirect" value="<?php echo $_GET['redirect'] ?>">
+                <div class="boxed">
+                    <div class="form-group">
+                        <label for="email">Email: </label>
+                        <input type="text" name="email" placeholder="john@doe.com" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password: </label>
+                        <input type="password" name="password" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>
