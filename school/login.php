@@ -6,7 +6,7 @@
         <div class="col-md-12">
             <div class="boxed">
                 <h3>Not a user?</h3>
-                <p><a href="register.php?<?php echo $_GET['redirect'] ?>">Click here to register.</a></p>
+                <p><a href="register.php?redirect=<?php echo $_GET['redirect'] ?>">Click here to register.</a></p>
             </div>
         </div>
         <div class="col-md-12">
