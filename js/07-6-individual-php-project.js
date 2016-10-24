@@ -1,5 +1,7 @@
 function addFood() {
-    console.log($('#addFoodForm').validate());
+    if ($('#addFoodForm').validate().errorList > 0) {
+        return false;
+    }
 
     var foodName = $('#add_food_name').val();
     var foodType = $('#add_food_type').val();
