@@ -1,3 +1,5 @@
+<?php session_start() ?>
+<?php if (!$_SESSION || !$_SESSION['auth']) header('Location: login.php?redirect=07-6-individual-php-project.php') ?>
 <?php require_once('../layouts/header.php') ?>
 <?php require_once('../db/dbConnect.php') ?>
 <?php require_once('../db/DBPantry.php') ?>
