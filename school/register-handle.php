@@ -7,8 +7,9 @@ $db = new DBUser($conn);
 $response = $db->registerUser($_POST['email'], $_POST['password']);
 
 if ($response) {
-    header('Location: ' . $_POST['redirect']);
+    echo 'Successfully created user<br>';
+} else {
+    echo 'Failed to create user<br>';
 }
-
-die('Failed to register user...');
+echo $_POST['redirect'] . '<br>';
 ?>
