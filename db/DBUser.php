@@ -33,10 +33,10 @@ class DBUser {
 
         if ($result->num_rows > 0) {
             $data = $result->fetch_all(MYSQLI_ASSOC);
-            echo '<pre>';
-            var_dump($data);
-            echo '</pre>';
-            die;
+
+            if (password_verify($password, $data[0]['password'])) {
+                return true;
+            }
         }
 
         return false;
