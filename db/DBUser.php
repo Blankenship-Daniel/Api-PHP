@@ -24,5 +24,16 @@ class DBUser {
 
         return false;
     }
+
+    function authUser($email, $password) {
+        $stmt = $this->conn->prepare("SELECT password FROM user WHERE email = ?");
+        $stmt->bind_param("s", $email);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        echo '<pre>';
+        var_dump($result);
+        echo '</pre>';
+        die;
+    }
 }
 ?>
