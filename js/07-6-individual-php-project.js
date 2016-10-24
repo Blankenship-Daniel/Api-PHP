@@ -1,5 +1,5 @@
 function addFood() {
-    $('#addFoodForm').validate();
+    console.log($('#addFoodForm').validate());
 
     var foodName = $('#add_food_name').val();
     var foodType = $('#add_food_type').val();
