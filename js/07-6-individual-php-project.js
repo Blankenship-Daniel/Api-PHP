@@ -1,4 +1,6 @@
 function addFood() {
+    $('#addFoodForm').validate();
+
     var foodName = $('#add_food_name').val();
     var foodType = $('#add_food_type').val();
     var expDate = $('#add_exp_date').val();

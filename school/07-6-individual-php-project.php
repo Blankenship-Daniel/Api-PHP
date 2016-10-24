@@ -8,28 +8,35 @@
     <h1>Food Pantry</h1>
     <div class="row">
         <div class="col-md-12">
-            <div class="boxed form-group">
-                <h3>Add food</h3>
-                <label for="add_food_name">Food name: </label>
-                <input maxlength="50" type="text" name="add_food_name" id="add_food_name" value="" class="form-control" placeholder="Cheese">
-                <label for="add_food_type">Food type: </label>
-                <select name="add_food_type" id="add_food_type" class="form-control">
-                <?php
-                    $db = new DBPantry($conn);
-                    $food_types = $db->getAllFoodTypes();
+            <form id="addFoodForm">
+                <div class="boxed">
+                    <h3>Add food</h3>
+                    <div class="form-group">
+                        <label for="add_food_name">Food name: </label>
+                        <input maxlength="50" type="text" name="add_food_name" id="add_food_name" value="" class="form-control" placeholder="Cheese" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="add_food_type">Food type: </label>
+                        <select name="add_food_type" id="add_food_type" class="form-control" required>
+                        <?php
+                            $db = new DBPantry($conn);
+                            $food_types = $db->getAllFoodTypes();
 
-                    foreach ($food_types as $food_type) {
-                        echo "<option value='" . $food_type['id'] . "'>" .
-                            strtolower(str_replace("_", " ", $food_type['name'])) .
-                            "</option>";
-                    }
-                ?>
-                </select>
-                <label for="add_exp_date">Expiration Date: </label>
-                <input maxlength="10" type="text" name="add_exp_date" id="add_exp_date" value="" class="form-control" placeholder="YYYY-MM-DD">
-                <br>
-                <button onclick="addFood()" class="btn">Add Food</button>
-            </div>
+                            foreach ($food_types as $food_type) {
+                                echo "<option value='" . $food_type['id'] . "'>" .
+                                    strtolower(str_replace("_", " ", $food_type['name'])) .
+                                    "</option>";
+                            }
+                        ?>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="add_exp_date">Expiration Date: </label>
+                        <input maxlength="10" type="text" name="add_exp_date" id="add_exp_date" value="" class="form-control" placeholder="YYYY-MM-DD" required>
+                    </div>
+                    <button onclick="addFood()" class="btn btn-default">Add Food</button>
+                </div>
+            </form>
         </div>
     </div>
     <div class="row">
