@@ -34,7 +34,7 @@
                         <label for="add_exp_date">Expiration Date: </label>
                         <input maxlength="10" type="text" name="add_exp_date" id="add_exp_date" value="" class="form-control" placeholder="YYYY-MM-DD" required>
                     </div>
-                    <button onclick="addFood()" class="btn btn-default">Add Food</button>
+                    <button onclick="addFood(event)" class="btn btn-default">Add Food</button>
                 </div>
             </form>
         </div>
