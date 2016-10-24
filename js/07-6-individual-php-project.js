@@ -1,5 +1,8 @@
 function addFood() {
-    if ($('#addFoodForm').validate().errorList > 0) {
+    var form = $('#addFoodForm');
+    form.validate();
+
+    if (!form.valid()) {
         return false;
     }
 
