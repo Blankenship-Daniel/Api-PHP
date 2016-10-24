@@ -76,7 +76,6 @@ function getAllFoods() {
         },
         dataType: 'json',
         success: function(data) {
-            console.log(data);
             populateFoods(data);
         },
         error: function(xhr, opt, err) {

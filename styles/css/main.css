@@ -128,6 +128,9 @@ nav.navbar {
   color: #f44336;
   cursor: pointer; }
 
+.error {
+  color: #f44336; }
+
 @media (max-width: 800px) {
   .navbar-nav {
     display: none; } }
