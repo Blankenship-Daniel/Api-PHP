@@ -3,7 +3,7 @@
 <?php require_once('../db/DBPantry.php') ?>
 
 <div class="container">
-    <h1>PHP Database Modification</h1>
+    <h1>Food Pantry</h1>
     <div class="row">
         <div class="col-md-12">
             <div class="boxed form-group">
