@@ -1,6 +1,6 @@
-function addFood() {
+function addFood(e) {
+    e.preventDefault();
     var form = $('#addFoodForm');
-    form.preventDefault();
     form.validate();
 
     if (!form.valid()) {
