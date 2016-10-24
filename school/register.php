@@ -1,16 +1,10 @@
 <?php require_once('../layouts/header.php') ?>
 
 <div class="container">
-    <h1>User Login</h1>
+    <h1>User Register</h1>
     <div class="row">
         <div class="col-md-12">
-            <div class="boxed">
-                <h3>Not a user?</h3>
-                <p><a href="register.php">Click here to register.</a></p>
-            </div>
-        </div>
-        <div class="col-md-12">
-            <form class="" action="login-handle.php" method="post">
+            <form action="register-handle.php" method="post">
                 <input type="hidden" name="redirect" value="<?php echo $_GET['redirect'] ?>">
                 <div class="boxed">
                     <div class="form-group">
